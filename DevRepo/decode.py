@@ -36,7 +36,7 @@ with open ('combo.py', 'w') as fp:
 
 
 import os
-os.chdir(r"/Users/yangyu/Dropbox/github/pythonlib_ub/DevRepo")
+os.chdir(r"/Users/yangyu/Dropbox/github/pythonlib_ub/2")
 
 
 with open ('combo.py') as ff: 
