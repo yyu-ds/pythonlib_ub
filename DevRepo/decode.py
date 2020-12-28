@@ -35,6 +35,10 @@ with open ('combo.py', 'w') as fp:
 #%% in another file 
 
 
+import os
+os.chdir(r"/Users/yangyu/Dropbox/github/pythonlib_ub/DevRepo")
+
+
 with open ('combo.py') as ff: 
     data1 = ff.read() 
 with open ('combo.py') as ff: 
@@ -47,6 +51,6 @@ first = 0
 for i in range(file_num):
     line_range = (first, plist_lines[i])
     lines = data2[line_range[0]:line_range[1]]
-    with open (f'__{plist_files[i]}', 'w') as fp: 
+    with open (f'{plist_files[i]}', 'w') as fp: 
         fp.writelines(lines) 
     first = line_range[1]
